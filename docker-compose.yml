@@ -1,0 +1,13 @@
+version: "2"
+services:
+  mongodb:
+    image: registry.hub.docker.com/library/mongo:4.4
+    environment:
+      - "MONGO_INITDB_ROOT_USERNAME=stock_admin"
+      - "MONGO_INITDB_ROOT_PASSWORD=happymark73"
+    ports:
+      - "27017:27017" # Hack - Do not change port as mongo does not run on specified port. It only runs on 27017 inside container.
+    mem_limit: 800m
+    mem_reservation: 800m
+    volumes:
+      - /opt/stock_mongodb:/data/db

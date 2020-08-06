@@ -1,0 +1,14 @@
+{
+  "name": "stock_sat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.19",
+    "migrate-mongo": "^8.1.1",
+    "mongodb": "^3.6.0",
+    "uuid": "^8.3.0"
+  }
+}
